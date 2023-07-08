@@ -1,0 +1,15 @@
+---
+name: Go to Repo & Open in VSCode
+command: 'cd ~/Desktop/GitRepo.nosync/{{repo_folder_name}} && code .'
+tags:
+  - code
+  - repo
+  - vscode
+description: 'Navigate to Repo and open in Vscode'
+author: Sarim Shah
+arguments:
+  - name: repo_folder_name
+    description: The name of the repository folder file that the git repo is in
+    default_value: arsenal-stats
+author_url: 'https://github.com/cozyrimz'
+shells: []

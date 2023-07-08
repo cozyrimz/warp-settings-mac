@@ -1,0 +1,48 @@
+# Warp Launch Configuration
+#
+#
+# Use this to start a certain configuration of windows, tabs, and panes
+# Open the launch configuration palette to access and open any launch configuration
+#
+# This file defines your launch configuration
+# More on how to do so here: 
+# https://docs.warp.dev/features/session-management/launch-configurations
+#
+# All launch configurations are stored under ~/.warp/launch_configurations/
+# Edit them anytime!
+# 
+# You can also add commands that run on-start for your launch configurations like so:
+# ---
+# name: Example with Command
+# windows:
+#  - tabs:
+#      - layout:
+#          cwd: /Users/warp-user/project
+#          commands:
+#            - exec: code .
+
+---
+name: Kafka-config
+windows:
+  - tabs:
+      - title: misc
+        layout:
+          cwd: /Users/sashah/indeed/time-backend
+      - title: time-backend
+        layout:
+          cwd: /Users/sashah/indeed/time-backend
+      - title: local-confluent
+        layout:
+          cwd: /Users/sashah/indeed/local-confluent-platform
+      - title: rules-processor
+        layout:
+          cwd: /Users/sashah/indeed/time-rules-processor
+      - title: time-processor
+        layout:
+          cwd: /Users/sashah/indeed/time-processor
+      - title: kafka-connect
+        layout:
+          cwd: /Users/sashah/indeed/timedb-binlog-kafka-connect
+      - title: agg-time-connect
+        layout:
+          cwd: /Users/sashah/indeed/timedb-aggtime-kafka-connect
